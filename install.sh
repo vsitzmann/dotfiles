@@ -9,12 +9,6 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install build-essential bzip2 tmux htop default-jdk zsh nvidia-410 gcsfuse -y
 
-# Install zsh
-sudo apt-get install zsh
-
-# Install zplug
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-
 # Install miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3.sh
 cd ~
@@ -30,8 +24,6 @@ conda update -n base -c defaults conda -y
 conda config --add channels conda-forge
 conda config --add channels pytorch
 conda create --name tensorflow python=3.6.8 pip tensorflow -y
-
-sudo chsh -s $(which zsh) "$USER"
 
 rm ~/miniconda3.sh
 sudo reboot now
