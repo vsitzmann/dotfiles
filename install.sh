@@ -9,6 +9,9 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install build-essential bzip2 tmux htop default-jdk zsh nvidia-410 gcsfuse -y
 
+# Install zsh
+sudo apt-get install zsh
+
 # Install zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
